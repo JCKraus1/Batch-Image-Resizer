@@ -164,7 +164,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="./LSCG_LOGO_RGB.png" 
+              src="/LSCG_LOGO_RGB.png" 
               alt="LSCG Logo" 
               className="h-12 w-auto object-contain"
               referrerPolicy="no-referrer"
