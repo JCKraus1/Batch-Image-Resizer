@@ -170,7 +170,7 @@ export default function App() {
               referrerPolicy="no-referrer"
             />
             <div>
-              <h1 className="text-xl font-bold tracking-tight">LSCG Batch Image Resizer</h1>
+              <h1 className="text-xl font-bold tracking-tight">Batch Image Resizer</h1>
               <p className="text-xs text-stone-500 font-medium uppercase tracking-wider">Professional Image Optimization</p>
             </div>
           </div>
