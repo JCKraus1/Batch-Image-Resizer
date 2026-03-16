@@ -459,11 +459,6 @@ export default function App() {
       <footer className="max-w-5xl mx-auto px-6 py-12 border-t border-stone-200 mt-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-stone-400 text-sm">
           <p>© 2026 LSCG Batch Image Resizer. All processing happens in your browser.</p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-stone-600 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-stone-600 transition-colors">Terms</a>
-            <a href="#" className="hover:text-stone-600 transition-colors">Help</a>
-          </div>
         </div>
       </footer>
     </div>
