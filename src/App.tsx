@@ -10,6 +10,7 @@ import imageCompression from 'browser-image-compression';
 import JSZip from 'jszip';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from './lib/utils';
+import lscgLogo from './LSCG_LOGO_B&W.png';
 
 interface FileStatus {
   file: File;
@@ -163,12 +164,12 @@ export default function App() {
       <header className="border-b border-stone-200 bg-white/80 backdrop-blur-md sticky top-0 z-10">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img 
-              src="./LSCG_LOGO_B&W.png" 
-              alt="LSCG Logo" 
-              className="h-12 w-auto object-contain"
-              referrerPolicy="no-referrer"
-            />
+<img 
+  src={lscgLogo} // Use the variable, not a string
+  alt="LSCG Logo" 
+  className="h-12 w-auto object-contain"
+  referrerPolicy="no-referrer"
+/>
             <div>
               <h1 className="text-xl font-bold tracking-tight">Batch Image Resizer</h1>
               <p className="text-xs text-stone-500 font-medium uppercase tracking-wider">Professional Image Optimization</p>
