@@ -10,7 +10,7 @@ import imageCompression from 'browser-image-compression';
 import JSZip from 'jszip';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from './lib/utils';
-import lscgLogo from './LSCG_LOGO_B&W.png';
+import logo from './assets/logo.png';
 
 interface FileStatus {
   file: File;
@@ -164,14 +164,14 @@ export default function App() {
       <header className="border-b border-stone-200 bg-white/80 backdrop-blur-md sticky top-0 z-10">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-<img 
-  src={lscgLogo} // Use the variable, not a string
-  alt="LSCG Logo" 
-  className="h-12 w-auto object-contain"
-  referrerPolicy="no-referrer"
-/>
+            <img 
+              src={logo} 
+              alt="ITG Logo" 
+              className="h-12 w-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
             <div>
-              <h1 className="text-xl font-bold tracking-tight">Batch Image Resizer</h1>
+              <h1 className="text-xl font-bold tracking-tight">ITG Batch Image Resizer</h1>
               <p className="text-xs text-stone-500 font-medium uppercase tracking-wider">Professional Image Optimization</p>
             </div>
           </div>
@@ -459,7 +459,12 @@ export default function App() {
       {/* Footer */}
       <footer className="max-w-5xl mx-auto px-6 py-12 border-t border-stone-200 mt-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-stone-400 text-sm">
-          <p>© 2026 LSCG Batch Image Resizer. All processing happens in your browser.</p>
+          <p>© 2026 ITG Batch Image Resizer. All processing happens in your browser.</p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="hover:text-stone-600 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-stone-600 transition-colors">Terms</a>
+            <a href="#" className="hover:text-stone-600 transition-colors">Help</a>
+          </div>
         </div>
       </footer>
     </div>
